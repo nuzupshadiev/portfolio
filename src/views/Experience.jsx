@@ -9,7 +9,7 @@ export default function Experience() {
             duration: "Nov - Feb 2023",
             content: [
                 `Successfully managed and led a team of 7 developers throughout the project, ensuring smooth
-                 coordination and timely delivery of the application before G-20.`,
+                coordination and timely delivery of the application before G-20.`,
                 `Developed the Smart Scan application using full-stack technologies such as ReactJS and Flask.
                 Collaborated with ASI, the Smart City, including government officials, to gather requirements
                 and incorporate their insights into the application's design and functionality.`,
@@ -97,7 +97,7 @@ export default function Experience() {
                         {
                             Object.keys(work).map((k, i) => {
                                 return <li onClick={() => setActiveTab(i)}
-                                           className={`p-3 px-6 cursor-pointer border-b-2 md:border-b-0 md:border-l-2 ${activeTab === i ? "active-item" : ""}`}>{k}</li>
+                                        className={`p-3 px-6 cursor-pointer border-b-2 md:border-b-0 md:border-l-2 ${activeTab === i ? "active-item" : ""}`}>{k}</li>
                             })
                         }
                     </ul>
@@ -107,7 +107,7 @@ export default function Experience() {
                                 return <div className={`${activeTab === i ? "" : "hidden"}`}>
                                     <div className={`font-Poppins text-xl mb-1 font-[500]`}>
                                         <span className={"slate mr-2"}>{work[k].position}</span><a href={work[k].url}
-                                                                                                   className={"accent"}>@ {k}</a>
+                                            className={"accent"}>@ {k}</a>
                                     </div>
                                     <span className={"slate text-sm font-monospace"}>{work[k].duration}</span>
                                     <ul className={"flex flex-col bullet-list mt-4 max-w-[540px] slate-alt leading-6 text-sm"}>

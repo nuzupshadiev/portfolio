@@ -11,7 +11,7 @@ function App() {
             <Outlet/>
         </div>
         <SideLinks />
-        <Footer/>
+        {/* <Footer/> */}
     </>
   );
 }
